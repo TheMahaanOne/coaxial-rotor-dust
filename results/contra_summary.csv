@@ -1,0 +1,5 @@
+case,separation_R,phase_angle_deg,down_thrust_N,up_thrust_N,down_torque_Nm,up_torque_Nm
+0.25_contra,0.25,None,2.3105,3.10459,0.0598958,0.0677677
+0.3_contra,0.3,None,2.22328,3.14902,0.0584185,0.068266
+0.35_contra,0.35,None,2.21336,3.1455,0.0581984,0.0680141
+0.4_contra,0.4,None,2.16959,3.1199,0.0577758,0.067464

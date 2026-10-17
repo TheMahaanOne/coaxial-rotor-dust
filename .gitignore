@@ -1,0 +1,18 @@
+# DUST solver output (several GB)
+**/Output/
+**/PostPro/
+*.h5
+*.vtu
+*.pvd
+*.dat
+run.log
+fort.*
+# Lab experimental data stays private
+*exp*.csv
+*.xlsx
+# Python / OS clutter
+__pycache__/
+*.pyc
+Thumbs.db
+desktop.ini
+~$*

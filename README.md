@@ -13,8 +13,8 @@
 
 I simulated co-rotating and contra-rotating co-axial rotor pairs in hover with **[DUST](https://gitlab.com/dust_group/dust)**, a mid-fidelity Lagrangian vortex-particle solver (Politecnico di Milano / Airbus), to understand rotor-to-rotor interference.
 
-<p align="center"><img src="images/wake_corotating_side.jpg" width="32%"> <img src="images/wake_contrarotating.jpg" width="32%"> <img src="images/wake_corotating_top.jpg" width="32%"></p>
-<p align="center"><sub>Vortex-particle wakes in ParaView: co-rotating pair after 11 revolutions (left), contra-rotating pair (centre), top view (right)</sub></p>
+<p align="center"><img src="images/corotating_pair_no_index_angle_side_view_after_11_rotations.jpg" width="32%"> <img src="images/contra_rotating_pair.jpg" width="32%"> <img src="images/corotating_pair_top_view.jpg" width="32%"></p>
+<p align="center"><sub>DUST vortex-particle wakes in ParaView: co-rotating pair, no index angle, side view after 11 rotations (left) · contra-rotating pair (centre) · co-rotating pair, top view (right)</sub></p>
 
 ## Setup
 
@@ -44,8 +44,8 @@ Torque is Q = ∫(F<sub>x</sub>·r + F<sub>y</sub>·c/4) dr, so it is weighted b
 
 <p align="center"><img src="images/radial_load_distribution.png" width="85%"></p>
 
-<p align="center"><img src="images/wake_index_angle_side.jpg" width="40%"> <img src="images/wake_single_rotor_vorticity.jpg" width="55%"></p>
-<p align="center"><sub>Index-angle case at 0.25R (left); single-rotor baseline wake coloured by vorticity (right)</sub></p>
+<p align="center"><img src="images/index_angle_varied_0.25R_side_view.jpg" width="40%"> <img src="images/particle_field_coloured_by_vorticity_single_rotor_baseline.jpg" width="55%"></p>
+<p align="center"><sub>Index angle varied (0.25R), side view (left) · particle field coloured by vorticity, single-rotor baseline (right)</sub></p>
 
 ## Code
 

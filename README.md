@@ -32,33 +32,15 @@ I simulated co-rotating and contra-rotating co-axial rotor pairs in hover with *
 - **Rotor-to-rotor interference:** the co-rotating lower rotor loses **34–51 % of its thrust** compared with an isolated rotor, and varies by **27 % with index angle alone**. A single-rotor model sees none of this.
 - Early runs were well off. I traced the problem to three setup errors: the **rotor origin definition**, the **reference-frame assignment** and the **freestream velocity orientation**. I then rebuilt the whole case matrix.
 
-<p align="center"><img src="images/corotating_index_angle_sim.png" width="100%"></p>
 
 The upstream rotor barely notices the index angle. The downstream rotor, sitting in the upper rotor's wake, swings by about 0.5 N of thrust as the blades move in and out of phase.
 
-<p align="center"><img src="images/contrarotating_separation_sim.png" width="100%"></p>
 
-### Where along the blade the load changes
-
-Torque is Q = ∫(F<sub>x</sub>·r + F<sub>y</sub>·c/4) dr, so it is weighted by radius. A change in total torque says nothing about its cause, so `radial_diag.py` shows where along the span it comes from:
-
-<p align="center"><img src="images/radial_load_distribution.png" width="85%"></p>
-
-<p align="center"><img src="images/index_angle_varied_0.25R_side_view.jpg" width="40%"> <img src="images/particle_field_coloured_by_vorticity_single_rotor_baseline.jpg" width="55%"></p>
-<p align="center"><sub>Index angle varied (0.25R), side view (left) · particle field coloured by vorticity, single-rotor baseline (right)</sub></p>
-
-## Code
-
-| File | What it does |
-|---|---|
-| [`postprocessing/dust_postpro.py`](postprocessing/dust_postpro.py) | Parses DUST sectional-load `.dat` files and **integrates per-blade thrust, torque, Mx and My with the trapezoidal rule**, averaged over the final revolution. Writes per-blade and per-rotor CSVs. |
-| [`postprocessing/radial_diag.py`](postprocessing/radial_diag.py) | Plots radial thrust and torque distributions between cases and shows where the change comes from. |
 
 ## Results
 
 [`results/`](results) has the integrated simulation loads, per blade and per rotor, for every case.
 
-> The case input decks and the lab's experimental data are not published.
 
 ---
 *Akshay Malhan · B.E. Mechanical Engineering, Thapar Institute · [LinkedIn](https://linkedin.com/in/akshaymalhan)*

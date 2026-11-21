@@ -35,12 +35,5 @@ I simulated co-rotating and contra-rotating co-axial rotor pairs in hover with *
 
 The upstream rotor barely notices the index angle. The downstream rotor, sitting in the upper rotor's wake, swings by about 0.5 N of thrust as the blades move in and out of phase.
 
-
-
-## Results
-
-[`results/`](results) has the integrated simulation loads, per blade and per rotor, for every case.
-
-
----
+--
 *Akshay Malhan · B.E. Mechanical Engineering, Thapar Institute · [LinkedIn](https://linkedin.com/in/akshaymalhan)*
